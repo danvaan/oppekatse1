@@ -9,6 +9,8 @@
 	$signupPasswordError = "";
 	$LoginEmailError = "";
 	$loginPasswordError = "";
+	$sooerror = "";
+		
 		if (isset ($_POST["signupEmail"])){
 		
 		if (empty ($_POST["signupEmail"])) {
@@ -75,6 +77,11 @@
 			
 			<input name="SignupPassword" placeholder="Parool" type="password"> <?php echo $signupPasswordError;?>
 		
+			<br><br>
+			
+				<input type="radio" name="gender" value="male"> Mees<br>
+				<input type="radio" name="gender" value="female"> Naine<br>
+				<?php echo $sooerror; ?>
 			<br><br>
 			<input type="submit" value = "Loo kasutaja">
 			</form>
